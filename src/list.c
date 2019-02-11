@@ -95,14 +95,10 @@ void list_destroy(List *list)
     for (int i=0;i<list->size;i++)
     {
         LNode *suivant = noeud->next;
-        noeud->prev = NULL;
-        noeud->next = NULL;
-        noeud->data = NULL;
         free(noeud);
         noeud = suivant;
     }
     list->head = NULL;
     list->tail = NULL;
     list->size = 0;
-    free(list);
 }

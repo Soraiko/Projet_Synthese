@@ -5,11 +5,11 @@
 
 /*
  * Ahmed met à jour la structure suivante pour définir le type Point
- * (enlève les commentaires) 
+ * (enlève les commentaires)
  */
 typedef struct Point {
-//  Rational x;  // abscisse
-//  Rational y;  // ordonnée
+  Rational x;  // abscisse
+  Rational y;  // ordonnée
 } Point;
 
 /*
@@ -17,8 +17,8 @@ typedef struct Point {
  * (enlève les commentaires)
  */
 typedef struct Segment {
-//  Point begin;  // début du segment
-//  Point end;  // fin du segment
+  Point begin;  // début du segment
+  Point end;  // fin du segment
 } Segment;
 
 /*

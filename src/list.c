@@ -1,13 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "list.h"
+#include "../include/list.h"
 
 /*
  * créer et renvoie un nouveau nœud (LNode)
  */
-static LNode * new_node(void *data) {
-  // A faire
-  return;
+static LNode * new_node(void *data)
+{
+    LNode *node = malloc(sizeof(data) + sizeof(LNode));
+    node->data = data;
+    node->next = NULL;
+    node->prev = NULL;
+    return node;
 }
 
 /*
@@ -24,8 +28,18 @@ void list_prepend(List *list, void *data) {
  * y ranger la donnée (data)
  * insérer l'élément en queue de la liste *list
  */
-void list_append(List *list, void *data) {
-  // A faire
+void list_append(List *list, void *data)
+{
+    LNode *node = new_node(data);
+    if (list->tail != NULL)
+    {
+        (list->tail)->next = node;
+        node->prev = list->tail;
+    }
+    list->tail = node;
+    if (list->head == NULL)
+        list->head = node;
+    list->size = list->size + 1;
 }
 
 /*
@@ -75,6 +89,20 @@ void list_exchange_curr_next(List *list, LNode *curr) {
  * sans pour autant supprimer leurs données (data)
  * qui sont des pointeurs
  */
-void list_destroy(List *list) {
-  // A faire
+void list_destroy(List *list)
+{
+    LNode *noeud = list->head;
+    for (int i=0;i<list->size;i++)
+    {
+        LNode *suivant = noeud->next;
+        noeud->prev = NULL;
+        noeud->next = NULL;
+        noeud->data = NULL;
+        free(noeud);
+        noeud = suivant;
+    }
+    list->head = NULL;
+    list->tail = NULL;
+    list->size = 0;
+    free(list);
 }

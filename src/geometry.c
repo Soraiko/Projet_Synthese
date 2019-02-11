@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "geometry.h"
+#include "../include/geometry.h"
 
 /*
  * affiche le point p

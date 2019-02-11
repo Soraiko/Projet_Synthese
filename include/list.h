@@ -1,6 +1,8 @@
 #ifndef LIST_H_
 #define LIST_H_
 
+#include "../include/geometry.h"
+
 typedef struct LNode {
   void *data;          // données
   struct LNode *next;  // pointeur vers le prochain noeud

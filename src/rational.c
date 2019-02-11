@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "rational.h"
+#include "../include/rational.h"
 
 /*
  * renvoie le PGCD des a et b

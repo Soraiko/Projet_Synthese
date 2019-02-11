@@ -1,8 +1,30 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "algo.h"
-#include "tree.h"
+#include "../include/algo.h"
+#include "../include/tree.h"
 
+void AfficherSegments(List* list)
+{
+    LNode *head = list->head;
+
+    for (int i=0;i<list->size;i++)
+    {
+        Segment *s = (Segment*)(head->data);
+
+        printf("%d/%d,%d/%d %d/%d,%d/%d\n",
+               (s->begin).x.num,
+               (s->begin).x.den,
+               (s->begin).y.num,
+               (s->begin).y.den,
+
+               (s->end).x.num,
+               (s->end).x.den,
+               (s->end).y.num,
+               (s->end).y.den);
+        head = head->next;
+    }
+    printf("\n\n");
+}
 /*
  * ranger dans une liste les segments stockés
  * dans le fichier texte de nom infilename
@@ -25,7 +47,6 @@ List * load_segments(char *infilename) {
   }
   int size;
   fscanf(fptr, "%d", &size);
-
   for (int i = 0; i < size; i++) {
     long a1, b1, c1, d1, a2, b2, c2, d2;
     fscanf(fptr, "%ld/%ld,%ld/%ld", &a1, &b1, &c1, &d1);

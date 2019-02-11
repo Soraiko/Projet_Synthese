@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "tree.h"
+#include "../include/tree.h"
 
 static void preorder(EventNode *node) {
   if (node != NULL) {

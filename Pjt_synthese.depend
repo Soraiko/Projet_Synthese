@@ -2504,3 +2504,56 @@
 	<stdio.h>
 	"tree.h"
 
+1549902028 source:u:\l2\s4\2018-2019\projet_synthese-master\src\list.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/list.h"
+
+1549901701 source:u:\l2\s4\2018-2019\projet_synthese-master\src\main.c
+	<stdlib.h>
+	"../include/algo.h"
+	"../include/tree.h"
+
+1549898156 source:u:\l2\s4\2018-2019\projet_synthese-master\src\rational.c
+	<stdio.h>
+	<stdlib.h>
+	"../include/rational.h"
+
+1549898453 source:u:\l2\s4\2018-2019\projet_synthese-master\src\test.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/geometry.h"
+	"../include/list.h"
+	"../include/tree.h"
+	"../include/algo.h"
+
+1549898421 source:u:\l2\s4\2018-2019\projet_synthese-master\src\tree.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/tree.h"
+
+1549901613 u:\l2\s4\2018-2019\projet_synthese-master\include\list.h
+	"../include/geometry.h"
+
+1549897914 u:\l2\s4\2018-2019\projet_synthese-master\include\rational.h
+
+1549900917 source:u:\l2\s4\2018-2019\projet_synthese-master\src\algo.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/algo.h"
+	"../include/tree.h"
+
+1549900706 u:\l2\s4\2018-2019\projet_synthese-master\include\algo.h
+	"list.h"
+
+1549897914 u:\l2\s4\2018-2019\projet_synthese-master\include\tree.h
+	"geometry.h"
+
+1549898173 u:\l2\s4\2018-2019\projet_synthese-master\include\geometry.h
+	"rational.h"
+
+1549898081 source:u:\l2\s4\2018-2019\projet_synthese-master\src\geometry.c
+	<stdio.h>
+	<stdlib.h>
+	"../include/geometry.h"
+

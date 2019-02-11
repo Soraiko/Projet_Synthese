@@ -3,6 +3,8 @@
 
 #include "list.h"
 
+void AfficherSegments(List *list);
+
 /*
  * ranger dans une liste les segments stockés
  * dans le fichier texte de nom infilename

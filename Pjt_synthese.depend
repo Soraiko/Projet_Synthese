@@ -2557,3 +2557,56 @@
 	<stdlib.h>
 	"../include/geometry.h"
 
+1551104286 source:\\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\src\geometry.c
+	<stdio.h>
+	<stdlib.h>
+	"../include/geometry.h"
+
+1551104024 \\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\include\geometry.h
+	"rational.h"
+
+1551098966 \\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\include\rational.h
+
+1551101678 source:\\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\src\list.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/list.h"
+
+1551098966 \\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\include\list.h
+	"../include/geometry.h"
+
+1551104848 source:\\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\src\main.c
+	<stdlib.h>
+	"../include/algo.h"
+	"../include/tree.h"
+
+1551098966 \\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\include\algo.h
+	"list.h"
+
+1551098966 \\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\include\tree.h
+	"geometry.h"
+
+1551098966 source:\\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\src\rational.c
+	<stdio.h>
+	<stdlib.h>
+	"../include/rational.h"
+
+1551098966 source:\\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\src\test.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/geometry.h"
+	"../include/list.h"
+	"../include/tree.h"
+	"../include/algo.h"
+
+1551098966 source:\\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\src\tree.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/tree.h"
+
+1551103579 source:\\etu.stockage.univ-lorraine.fr\brazda1u\bureau\projet_synthese-master\src\algo.c
+	<stdlib.h>
+	<stdio.h>
+	"../include/algo.h"
+	"../include/tree.h"
+

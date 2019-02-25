@@ -12,6 +12,16 @@ typedef struct Point {
   Rational y;  // ordonnée
 } Point;
 
+typedef struct PointF {
+  float x;  // abscisse
+  float y;  // ordonnée
+} PointF;
+
+typedef struct function {
+  float a;  // coefficient directeur
+  float b;  // ordonnée à l'origine
+} Fonction;
+
 /*
  * Bérénice met à jour la structure suivante pour définir le type Segment
  * (enlève les commentaires)
@@ -20,6 +30,23 @@ typedef struct Segment {
   Point begin;  // début du segment
   Point end;  // fin du segment
 } Segment;
+
+
+
+/*
+ * Donne la Fonction ax+b du segment
+ */
+Fonction GetFonction(Segment* s);
+
+
+
+PointF Intersection(Segment* s1, Segment* s2);
+
+/*
+ * Donne l'ordonné depuis l'abscisse avec la Fonction fonc
+ */
+float GetOrdonne(Fonction f, float abscisse);
+
 
 /*
  * affiche le point p

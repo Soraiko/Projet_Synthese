@@ -3,11 +3,15 @@
 #include "../include/algo.h"
 #include "../include/tree.h"
 
+
+
+
+
 void AfficherSegments(List* list)
 {
     LNode *head = list->head;
-
-    for (int i=0;i<list->size;i++)
+    int i;
+    for (i=0;i<list->size;i++)
     {
         Segment *s = (Segment*)(head->data);
 
@@ -47,7 +51,8 @@ List * load_segments(char *infilename) {
   }
   int size;
   fscanf(fptr, "%d", &size);
-  for (int i = 0; i < size; i++) {
+  int i;
+  for (i = 0; i < size; i++) {
     long a1, b1, c1, d1, a2, b2, c2, d2;
     fscanf(fptr, "%ld/%ld,%ld/%ld", &a1, &b1, &c1, &d1);
     fscanf(fptr, "%ld/%ld,%ld/%ld", &a2, &b2, &c2, &d2);
@@ -84,7 +89,8 @@ void save_intersections(char *outfilename, List *intersections) {
 
   fprintf(fptr, "%d\n", intersections->size);
   LNode *curr = intersections->head;
-  for (int i = 0; i < intersections->size; i++) {
+  int i;
+  for (i = 0; i < intersections->size; i++) {
     fprintf(fptr, "%ld/%ld,%ld/%ld\n",
             ((Point*) curr->data)->x.num,
             ((Point*) curr->data)->x.den,
